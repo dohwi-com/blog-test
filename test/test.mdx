@@ -1,0 +1,39 @@
+---
+slug: 테스트임
+title: "MDX 테스트용 글"
+description: "MDX를 테스트하기 위한 글입니덩덩덩덩덩"
+thumbnailUrl: "https://blog-cdn.tosspayments.com/wp-content/uploads/2021/08/28011146/semo9.png"
+tags: ["MDX", "테스트"]
+date: "2026-01-16"
+---
+
+# 🚀 MDX 렌더링 테스트
+
+이 페이지는 **MDX(Markdown + JSX)**가 정상적으로 작동하는지 확인하기 위해 작성되었습니다.
+
+## 1. 기본 마크다운 스타일 확인
+
+- **굵게(Bold)** 처리와 *기울임(Italic)* 처리가 잘 되나요?
+- [네이버 링크](https://naver.com)도 잘 작동하나요?
+- 인용문(Blockquote) 테스트입니다.
+> "배움은 끝이 없고, 코딩은 즐겁습니다."
+
+---
+
+## 2. 코드 블록 (Syntax Highlighting)
+
+가장 중요한 코드 블록 테스트입니다. `next-remote-mdx`나 `contentlayer`를 사용 중이라면 하이라이팅이 잘 적용되는지 확인해 보세요.
+
+```tsx
+import React from 'react';
+
+const Greeting = ({ name }: { name: string }) => {
+  return (
+    <div className="p-4 bg-blue-100 rounded-lg">
+      <h2 className="text-blue-800">안녕하세요, {name}님!</h2>
+      <p>MDX 내부에서 리액트 컴포넌트가 잘 렌더링되고 있습니다.</p>
+    </div>
+  );
+};
+
+export default Greeting;
